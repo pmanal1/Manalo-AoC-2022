@@ -1,4 +1,4 @@
-# For some unholy reason the first line wasn't being read....
+# For some unholy reason the first line wasn't being read.... (see **)
 
 # A - X - Rock - 1
 # B - Y - Paper - 2
@@ -11,7 +11,7 @@
 file = open("day2.txt", "r")
 totalScore = 0
 
-for line in file:
+for line in file: # ** I found the error, it's here in for line in file. **
   # Get the round
   elf = file.read(1)
   file.read(1)
